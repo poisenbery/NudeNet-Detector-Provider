@@ -1,4 +1,5 @@
 SEGGSMaster is a pun on the SEGS data type and the colloquial misspelling of "Sex" as "seggs."
+Node is found under Impact Pack with the other Detector Providers.
 
 Bethesda version of NudeNet V3 detector provider to work with Impact Pack ComfyUI.
 Dilate does not work. It will give an error and I do not know how any of this works.
