@@ -1,4 +1,4 @@
-Uses https://github.com/notAI-tech/NudeNet to output SEGS for nudity
+BBOX Detector Provider for NudeNet
 
 Bethesda version of NudeNet V3 detector provider to work with Impact Pack ComfyUI.
 KNOWN ISSUES:
@@ -33,3 +33,9 @@ Labels for filter:
     "FEMALE_BREAST_COVERED",
     "BUTTOCKS_COVERED",
 ```
+
+
+Credits: 
+
+1.) [Nudenet](https://github.com/notAI-tech/NudeNet)https://github.com/notAI-tech/NudeNet
+2.) [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)https://github.com/ltdrdata/ComfyUI-Impact-Pack
