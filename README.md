@@ -38,4 +38,5 @@ Labels for filter:
 Credits: 
 
 1.) [Nudenet](https://github.com/notAI-tech/NudeNet)https://github.com/notAI-tech/NudeNet
+
 2.) [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)https://github.com/ltdrdata/ComfyUI-Impact-Pack
