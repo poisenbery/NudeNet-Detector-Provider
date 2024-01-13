@@ -1,5 +1,4 @@
-SEGGSMaster is a pun on the SEGS data type and the colloquial misspelling of "Sex" as "seggs."
-Node is found under Impact Pack with the other Detector Providers.
+Uses https://github.com/notAI-tech/NudeNet to output SEGS for nudity
 
 Bethesda version of NudeNet V3 detector provider to work with Impact Pack ComfyUI.
 KNOWN ISSUES:
