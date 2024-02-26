@@ -3,8 +3,12 @@ BBOX Detector Provider for NudeNet
 This is a hacked version that could be made better by someone with real programming experience.
 I left the original code alone as much as possible.
 
+Git Clone the repo into your Custom Nodes directory
+The node will appear with the other Detector Providers under Impact Pack
+Use it the same as any other BBOX detector provider.
 
-Labels for filter: 
+
+List of Labels for filter: 
 ```
     "FEMALE_GENITALIA_COVERED",
     "FACE_FEMALE",
