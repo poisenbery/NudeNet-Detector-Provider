@@ -123,13 +123,12 @@ class NudenetDetector: #I wrote this so it's probably bad
             y1 = boxes[1]
             x2 = boxes[0] + boxes[2]
             y2 = boxes[1] + boxes[3]
-            if scores >= threshold:
-                if boxes[3] > drop_size and boxes[2] > drop_size:
-                    crop_region = NudenetDetector.make_crop_region(w, h, boxes, crop_factor) #stolen from Lieutenant Doctor Data
-                    crop_x1, crop_y1, crop_x2, crop_y2, = crop_region
-                    cropped_mask = np.zeros((crop_y2 - crop_y1, crop_x2 - crop_x1))
-                    cropped_mask[y1 - crop_y1:y2 - crop_y1, x1 - crop_x1:x2 - crop_x1] = 1
-                    cropped_mask = NudenetDetector.dilate_mask(cropped_mask, dilation)
+
+            crop_region = NudenetDetector.make_crop_region(w, h, boxes, crop_factor) #stolen from Lieutenant Doctor Data
+            crop_x1, crop_y1, crop_x2, crop_y2, = crop_region
+            cropped_mask = np.zeros((crop_y2 - crop_y1, crop_x2 - crop_x1))
+            cropped_mask[y1 - crop_y1:y2 - crop_y1, x1 - crop_x1:x2 - crop_x1] = 1
+            cropped_mask = NudenetDetector.dilate_mask(cropped_mask, dilation)
 
             item_bbox = (x1, y1, x2, y2)
             item = SEG(None, cropped_mask, scores, crop_region, item_bbox, labels, None)
